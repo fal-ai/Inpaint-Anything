@@ -75,6 +75,8 @@ if __name__ == "__main__":
 
     img = load_img_to_array(args.input_img)
 
+    print(f"Point coordinates: {[args.point_coords]}")
+
     masks, _, _ = predict_masks_with_sam(
         img,
         [args.point_coords],
